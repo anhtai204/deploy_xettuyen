@@ -1,0 +1,118 @@
+.button-open {
+    display: block;
+    z-index: 3;
+    position: fixed;
+    top: 115px;
+    align-content: center;
+    height: 40px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 212, 213);
+    cursor: pointer;
+}
+.button-open .button-block {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 22px;
+    width: fit-content;
+}
+.button-open .button-line {
+    margin-top: 6px;
+    display: block;
+    background-color: rgb(87, 90, 94);
+    height: 2px;
+    width: 25px;
+    border-radius: 2px;
+}
+@keyframes move-button-open {
+    from {left: -50px;}
+    to {left: 10px;}
+}
+@keyframes move-button-close {
+    from {left: 10px;}
+    to {left: -50px;}
+}
+
+menu {
+    position: relative;
+    display: block;
+    border-right: 1px solid rgb(178, 178, 178);
+}
+@keyframes menu-base-open {
+    0% {width: 0px;left: -50px;}
+    100% {width: 300px;left: 0px;}
+}
+@keyframes menu-base-close {
+    0% {width: 300px;left: 0px;}
+    100% {width: 0px;left: -50px;}
+}
+#menu {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    left: 0px;
+}
+.menu {
+    z-index: 2;
+    position: fixed;
+    top: 111px;
+    display: block;
+    height: 100%;
+    width: 300px;
+}
+@keyframes menu-item-open {
+    0% {left: -300px;}
+    100% {left: 0px;}
+}
+@keyframes menu-item-close {
+    0% {left: 0px;}
+    100% {left: -300px;}
+}
+.menu .menu-tag {
+    z-index: 2;
+    background-color: rgb(245, 245, 245);
+    height: 50px;
+    width: 249px;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 50px;
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+.menu .dropdown {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    width: 249px;
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+.menu .dropdown p {
+    margin: 0px;
+}
+.menu .dropdown .dropdown-item a {
+    padding-left: 10px;
+    display: block;
+    color: rgb(182, 182, 182);
+    text-decoration: none;
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+}
+.menu .dropdown .dropdown-item a:hover {
+    color: rgb(118, 118, 118);
+    background-color: rgb(245, 245, 245);
+}
+
+.menu .button-close {
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    left: 220px;
+    border: 0px;
+    background-color: rgb(245, 245, 245);
+    font-weight: 900;
+    font-size: 20px;
+}
